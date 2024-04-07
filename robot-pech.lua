@@ -35,15 +35,29 @@ function rub()
   while robot.down() do end 
 end
 
-while true do
-  if S==0
+function find(a)
+  -- s=1
+
+  -- while inv.getStackInSlot(1).name~=a do
+
+  --   print(inv.getStackInSlot(1).name)
+
+  --   robot.select(s)
+
+  --   s=s+1
+
+  --   if s>16 do s=0 end
+
+  -- end 
+end
+
+while true do 
+  if S==0 then
     razr()
-  end
+  end  
   if S==1 then
-      drev()
-      rub()
-  end
-    if S==2 then
+     --find("minecraft:log")
+  if S==2 then
 
   end
   if S==3 then
