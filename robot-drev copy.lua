@@ -18,6 +18,23 @@ function razr()
   S=1
 end
 
+function drev()
+  robot.select(2)
+  while robot.count()==0 do end
+  robot.place()
+end
+
+function rub()
+  robot.select(1)
+  while not robot.compare() do
+    os.sleep(0.5)
+  ends
+  robot.swing()
+  robot.forward()
+  while robot.swingUp() do robot.up() end
+  while robot.down() do end 
+end
+
 function find(a)
   s=1
   while inv.getStackInSlot(1).name~=a do
@@ -28,43 +45,12 @@ function find(a)
   end 
 end
 
-function zagr()
-  -- while robot.count()==0 do end
-
-  -- robot.suck()
-
-  -- pech=4
-
-  -- part=robot.count()/pech
-
-  -- robot.turnAround()
-
-  -- for a=1,pech do 
-
-  --   robot.forward()
-
-  --   robot.dropDown(part)
-
-  -- end
-
-  -- robot.turnAround()
-
-  -- for a=1,pech do 
-
-  --   robot.forward()
-
-  -- end
-  
-end
-
-
-
 while true do 
   if S==0 then
     razr()
   end  
   if S==1 then
-    zagr()
+    
   end
   if S==2 then
 
