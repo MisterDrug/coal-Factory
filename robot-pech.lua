@@ -37,7 +37,7 @@ function zagr()
 
   -- part=robot.count()/pech
 
-  -- robst.turnAround()
+  -- robot.turnAround()
 
   -- for a=1,pech do 
 
