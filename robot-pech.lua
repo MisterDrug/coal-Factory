@@ -50,7 +50,12 @@ while true do
     razr()
   end  
   if S==1 then
-     find("minecraft:log")
+    --drev()
+    --rub()
+    --find("minecraft:log")
+    --r.dropDown()
+    --S=0
+  end
   if S==2 then
 
   end
