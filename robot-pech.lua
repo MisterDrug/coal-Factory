@@ -64,7 +64,7 @@ while true do
     razr()
   end  
   if S==1 then
-    --zagr()
+    zagr()
   end
   if S==2 then
 
