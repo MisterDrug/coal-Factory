@@ -36,19 +36,13 @@ function rub()
 end
 
 function find(a)
-  -- s=1
-
-  -- while inv.getStackInSlot(1).name~=a do
-
-  --   print(inv.getStackInSlot(1).name)
-
-  --   robot.select(s)
-
-  --   s=s+1
-
-  --   if s>16 do s=0 end
-
-  -- end 
+  s=1
+  while inv.getStackInSlot(1).name~=a do
+    print(inv.getStackInSlot(1).name)
+    robot.select(s)
+    s=s+1
+    if s>16 do s=0 end
+  end 
 end
 
 while true do 
@@ -56,7 +50,7 @@ while true do
     razr()
   end  
   if S==1 then
-     --find("minecraft:log")
+     find("minecraft:log")
   if S==2 then
 
   end
